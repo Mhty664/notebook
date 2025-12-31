@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year 💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+
+/* ====== تحسين للموبايلات ====== */
+@media (max-width: 600px) {
+
+h1 {
+    font-size: 22px;
+}
+
+.container {
+    padding: 12px;
+}
+
+.gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.gallery img {
+    height: 140px;
+    border-radius: 12px;
+}
+
+input {
+    width: 180px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 16px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.video-box {
+    margin-bottom: 18px;
+    border-radius: 14px;
+}
+
+.message-box {
+    max-height: 260px;
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 15px;
+}
+}
+
+/* موبايلات صغيرة جدًا */
+@media (max-width: 360px) {
+.gallery img {
+    height: 120px;
+}
+
+.message-box {
+    font-size: 14px;
+}
+}
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #ffb6c1, #ff69b4, #ff85c1);
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.password-box {
+    margin: 30px 0;
+}
+
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    width: 220px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: none;
+    background: #ff2f92;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background: #ff0077;
+}
+
+.error {
+    margin-top: 10px;
+    color: #ffe3ec;
+}
+
+.hidden-content {
+    display: none;
+    margin-top: 30px;
+}
+
+/* فيديو */
+.video-box {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.video-box video,
+.video-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* رسالة طويلة */
+.message-box {
+    max-height: 320px;
+    overflow-y: auto;
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 18px;
+    text-align: right;
+    line-height: 1.9;
+    font-size: 17px;
+}
+
+/* Scroll ناعم */
+.message-box::-webkit-scrollbar {
+    width: 6px;
+}
+.message-box::-webkit-scrollbar-thumb {
+    background: #ff5fa2;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>💝 Happy New Year 💝</h1>
+
+    <div class="gallery">
+        <img src="photo10.jpg">
+        <img src="photo9.jpg">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
+        <img src="photo4.jpg">
+        <img src="photo5.jpg">
+        <img src="photo6.jpg">
+        <img src="photo7.jpg">
+        <img src="photo8.jpg">
+        <img src="photo11.jpg">
+        <img src="photo12.jpg">
+
+    </div>
+
+    <div class="password-box">
+        <input type="password" id="password" placeholder="الباسورد السري 💝">
+        <button onclick="unlock()">فتح المفاجأة</button>
+        <div class="error" id="error"></div>
+    </div>
+
+    <div class="hidden-content" id="secret">
+        
+        <!-- فيديو محلي -->
+        <div class="video-box">
+            <video controls>
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- لو YouTube بدل المحلي -->
+        <!--
+        <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        -->
+
+        <div class="message-box">
+            31/12/2025 Happy Newyears🥳💫<br><br>
+            مش متخيل ان عدي سنه وحنا سوا !!! كانت اخف واسرع واحلي سنه عدت عليا غيرنا ف بعض كتير اوي 
+            <br>
+            بقيتي بنتي وصحبتي وحبيبتي ومراتي انشاء الله واختي والبيست  وكل ما ليا ♥️
+            <br>
+            عدت سنه بحلوها وحلوها عشان كل خناقه او خلاف بينا كان بيخلص ف وقتو مش بيطول ويفعد بالايام كل مره حد كان بيغلط كان بسرعه يصلح غلطه ويعتذر والاهم ميكررهوش ♥️🤝
+            <br>
+            عدت سنه ونتي اتغيرتي عشاني بقيتي تخافي علي زعلي وتقلقي عليا ومبنعرفش ننام زعلانين من بعض 
+            <br>
+            عدت سنه ونتي غيرتي فيا كتير بقيت بخاف عليكي اوي عدت سنه وبقي في حد يقولي متعملش واسمع كلامه 😂🙂 
+            عدت سنه ونتي جمبي وحسستيني بالامان والحب وخليتيني حابب الحياه بعد ما كنت كارها لا ومش حبيتها بس لا وبقي عندي ثقه ان هبقا حاجه وهحقق احلامي وبقي في هدفين قدامي :
+            انجح👻<br>
+            اتجوزك♥️💍<br><br>
+            
+            عدت سنه ونا بخاف عليكي وبغير عليكي ومش عايز حد يشاركني فيكي حتي لو بنت !♥️💋
+            <br>
+            عدت سنه واحنا كنا فيها كل حاجه من اول اعجاب 11/11/2024
+            ومن اول مره اكلمنا 26/12/2024 
+             لغايه اول كلام ك صحاب 16/2/2025 
+            وعدت علينا خناقات اد كدا بس كل مره كنا بنختار بعض ♥️
+            <br>
+            امنيه السنادي هتكون اول مره اتمني حاجه ف بدايه السنه وبتمني منتفرقش ابدا مهما حصل
+            <br>
+            داخل سنه جديده معا مريومتي 😘
+            معايا بنت زي القمر🌝😍
+            معايا بنت جمال روحها ميتقدرش بكنوز الدنيا🤚😉♥️
+            معايا بنت راجل ف غيابي انثي ف حضوري♥️
+            معايا بنت مخافش تكلم غيري او تبص ربع بصه حته عشان متاكد اني مالي عينها ♥️ 
+            <br>
+            معايا بنت بتحبني حب مختلف مجربتوش قبل كدا حب مفهوش اذي ولا وجع ولا تحكم وخنقه مفهوش عقد وامراض مفهوش خيانه ووجع مفهوش هروب من المسؤوليه بالعكس انا حاببها عشان معا اجمل انسانه دخلت حياتي ♥️
+            <br>
+            سنه جديده ونا متغير 180 درجه عن السنه اللي فاتت بطلت كل حاجه وحشه وبقيت مع حد استاهله ويستاهلني ♥️
+            <br>
+            
+            بس مينفعش حوار ان اي حد بيفكر ف حاجه التانيه بيفكر فيا دا كدا اقلق واخلي بالي بقا😂😂❤️
+            <br><br><br>
+            
+            
+            بحبك يا مريومتي♥️<br>
+            I love you, Maryoumty💋<br>
+            Ich liebe dich, Maryoumty<br>
+            Je t’aime, Maryoumty♾️💋<br>
+            Te amo, Maryoumty♥️<br>
+            我爱你，Maryoumty👑💫<br>
+            Ti amo, Maryoumty♥️<br><br>
+            كتبتهالك بكل اللغات بحبك ♥️<br>
+            <br><br><br>
+            مستني ننجح ونكبر سوا يدوكتورتي 😍♥️
+        </div>
+    </div>
+</div>
+
+<script>
+function unlock() {
+    const pass = "2262009";
+    const input = document.getElementById("password").value;
+    const secret = document.getElementById("secret");
+    const error = document.getElementById("error");
+
+    if (input === pass) {
+        secret.style.display = "block";
+        error.innerText = "";
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    } else {
+        error.innerText = "الباسورد غلط 💔";
+    }
+}
+</script>
+
+</body>
+</html>
